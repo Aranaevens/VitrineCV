@@ -1,0 +1,116 @@
+﻿@model IEnumerable<VitrineCV.Models.Formation>
+
+@{
+    ViewData["Title"] = "Curriculum Vitae";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+<span class="cv-img">&nbsp;</span>
+<button class="accordion">Formations</button>
+<div class="panel">
+    <table class="table table-dark table-striped table-hover">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Annee)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Intitule)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Organisme)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ville)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Specialisation)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model){
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Annee)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Intitule)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Organisme)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ville)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Specialisation)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<button class="accordion">Compétences</button>
+<div class="panel">
+    <section>
+        <h3>Anglais</h3>
+        <p class="cv-p">Courant (TOEIC : 965, passé en 2016)</p>
+    </section>
+    <section>
+        <h3>Langages</h3>
+        <h4 class="cv-langages-h">Vus dans un cadre scolaire</h4>
+        <ul class="cv-langages-ul">
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>SH</li>
+            <li>PHP</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SQL</li>
+            <li>Git</li>
+            <li>Unix</li>
+        </ul>
+        <h4 class="cv-langages-h">Vus en auto-didacte</h4>
+        <ul class="cv-langages-ul">
+            <li>C#</li>
+            <li>.NET</li>
+            <li>Ruby</li>
+            <li>Bootstrap</li>
+            <li>Et plus à venir</li>
+        </ul>
+    </section>
+</div>
+
+<button class="accordion">Parcours</button>
+<div class="panel">
+    <section>
+        <p class="cv-p" id="cv-p-margin-top">
+            Après deux années de classes préparatoires aux grandes écoles au Lycée Kléber de Strasbourg, j’ai choisi de m’orienter vers le secteur
+            informatique et d’intégrer une école d’ingénieur de la région parisienne, dans le domaine du numérique, EPITA.</p>
+        <p class="cv-p">
+            Cette expérience m’a conforté dans mon choix d’orientation et m’a permis d’acquérir des compétences dans ce domaine. J’ai pu y
+            apprendre le C, C++, Java et SH en profondeur à travers divers projets sur des périodes courtes, qui m’ont ainsi appris à travailler
+            avec une deadline stricte et de manière rigoureuse. J’ai intégré cette formation pour étendre mes connaissances et poursuivre ce projet,
+            par exemple pour une poursuite d’études en alternance.
+        </p>
+    </section>
+</div>
+
+<button class="accordion">Extras sur moi</button>
+<div class="panel">
+    <section>
+        <h3>Loisirs</h3>
+        <p class="cv-p">
+            Mis à part les jeux-vidéos, que j'ai souvent pratiqué de manière compétitive, mon loisir principal pendant des années a été la <em>guitare</em>.
+            J'ai pratiqué cet instrument pendant environ une dizaine d'années, principalement seul mais pas que. J'ai notamment joué à la fête de la musique de Schirmeck
+            l'année de mon bac. C'était une expérience intéressante et qui, avec le recul, m'a pas mal appris à faire confiance dans un travail d'équipe.
+        </p>
+        <p class="cv-p">
+            Autrement, une grande partie de mon temps libre est passé à se renseigner sur un tas de sujet. J'aime essayer beaucoup de choses et me renseigner sur celles-ci.
+            C'est d'ailleurs en partie ce qui me plaît dans le numérique : il y a moult domaines qui sont différents mais reposent tous sur un socle commun.
+        </p>
+    </section>
+</div>

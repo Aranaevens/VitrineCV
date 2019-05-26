@@ -1,0 +1,115 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: brown;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1020px;
+    background-color: white;
+}
+
+.navbar-brand {
+    position: relative;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #1b1d22;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active-accordion, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active-accordion:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+.cv-langages-h {
+    margin-left: 1.5em;
+}
+
+.cv-langages-ul {
+    margin-left: 1.5em;
+}
+
+.cv-p {
+    margin-left: 1.5em;
+}
+
+.cv-img {
+    background:url(/images/mypic.jpg) no-repeat center;
+    background-size: contain;
+    display: block;
+    height: 17em;
+    width: 12em;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+#cv-p-margin-top{
+    margin-top: 1em;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
