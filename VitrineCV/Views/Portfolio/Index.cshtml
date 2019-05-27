@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+}
+
+<h2>View</h2>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/pkmnbanner.jpg" alt="iapoke" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    IA Pokémon
+                    <a class="btn btn-default" asp-area="" asp-controller="Portfolio" asp-action="iapoke">
+                        Voir plus
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/tetra.jpg" alt="Tetravex" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    N-Résolveur de Tétravex.
+                    <a class="btn btn-default" asp-area="" asp-controller="Portfolio" asp-action="Tetra">
+                        Voir plus
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner3.svg" alt="Vibes Theme" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Reproduction de thême WordPress
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
+                        Voir plus
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/tictac.jpg" alt="Tictactoe" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Morpion dynamique
+                    <a class="btn btn-default" asp-area="" asp-controller="Portfolio" asp-action="Tictac">
+                        Voir plus
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/autres.jpg" alt="autres" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Et d'autres encores...
+                    <a class="btn btn-default" asp-area="" asp-controller="Portfolio" asp-action="Others">
+                        Voir plus
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>

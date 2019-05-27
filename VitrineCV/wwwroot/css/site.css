@@ -85,6 +85,16 @@ body {
     margin-left: 1.5em;
 }
 
+.project-name{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-name>a{
+    text-decoration: none;
+}
+
 .cv-img {
     background:url(/images/mypic.jpg) no-repeat center;
     background-size: contain;
