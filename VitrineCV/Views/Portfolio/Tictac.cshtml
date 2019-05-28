@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Tictac";
+}
+
+<h2>TicTacToe (Morpion) Dynamique</h2>
+
+<section>
+    <p>Le but de ce projet était simplement de faire un Morpion pour jouer sur un Wamp local en PHP.</p>
+    <p>
+        Chaque joueur peut rentrer son nom et le symbole de son choix dans un formulaire brut. La page est ensuite redirigée vers le morpion en lui même.
+        Trois zones sont définies avec Bootstrap : la grille de jeu et une zone par joueur, récapitulant le symbole et le tour du joueur en cours. Chaque fois
+        que l'on clique sur une case vide de la grille, le symbole du joueur courant est affiché dans la case, la main passe à l'autre joueur. L'ensemble des données
+        nécessaires sont passées soit par session (pour le tableau entier, qui est une classe ayant un attribut matrice (array d'array)) soit par Get pour retrouver
+        les coordonnées du clic.
+    </p>
+    <p>Dès que l'application détecte un vainqueur, le jeu se gèle, le vainqueur est affiché clairement et un bouton pour rejouer est affiché.</p>
+</section>
+
+<section><h3 class="project-name"><i class="fab fa-github"></i><a href="https://github.com/Aranaevens/Tictactoe">  Application entière sur GitHub  </a><i class="fab fa-github"></i></h3></section>
+
+<script src="https://gist.github.com/Aranaevens/76373bcff588b2e780967b5a3ce387b8.js"></script>
+
