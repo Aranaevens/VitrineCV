@@ -83,7 +83,18 @@ body {
 }
 
 .cv-p {
-    margin-left: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.ot-h {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.ot-p {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 }
 
 .project-name{
