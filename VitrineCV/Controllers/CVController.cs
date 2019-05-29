@@ -12,15 +12,16 @@ namespace VitrineCV.Controllers
 {
     public class CVController : Controller
     {
-        private readonly CVContext _context;
+        //private readonly CVContext _context;
 
-        public CVController(CVContext context)
+        //public CVController(CVContext context)
+        //{
+        //    _context = context;
+        //}
+        public IActionResult Index()
         {
-            _context = context;
-        }
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Formations.ToListAsync());
+            //return View(await _context.Formations.ToListAsync());
+            return View();
         }
     }
 }

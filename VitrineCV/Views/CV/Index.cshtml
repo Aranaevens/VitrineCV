@@ -13,42 +13,110 @@
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.Annee)
+                    Année
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Intitule)
+                    Intitulé
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Organisme)
+                    Organisme
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Ville)
+                    Ville
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Specialisation)
+                    Spécialisation
                 </th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model){
+            @*@foreach (var item in Model){
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Annee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Intitule)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Organisme)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ville)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Specialisation)
+            </td>
+        </tr>
+        }*@
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Annee)
+                    2019
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Intitule)
+                    « Développeur Web/Web mobile » Formation Professionnelle
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Organisme)
+                    Elan Formation
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Ville)
+                    Strasbourg
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Specialisation)
+                    
                 </td>
             </tr>
-            }
+            <tr>
+                <td>
+                    2016-2017
+                </td>
+                <td>
+                    Première année de cursus Ingénieur (ING1) (Niveau)
+                </td>
+                <td>
+                    EPITA
+                </td>
+                <td>
+                    Le Kremlin-Bicêtre
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2013-2015
+                </td>
+                <td>
+                    CPGE Scientifique
+                </td>
+                <td>
+                    Lycée Kléber
+                </td>
+                <td>
+                    Strasbourg
+                </td>
+                <td>
+                    Physique-Chimie
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2010-2011
+                </td>
+                <td>
+                    Baccalauréat Scientifique
+                </td>
+                <td>
+                    Lycée Freppel
+                </td>
+                <td>
+                    Obernai
+                </td>
+                <td>
+                    Mathématiques
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>
