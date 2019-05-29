@@ -3,7 +3,12 @@ for details on configuring this project to bundle and minify static web assets. 
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: brown;
+    background: #1f2021; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #1f2021 0%, #aa2920 50%, #442420 71%, #1a1b1c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #1f2021 0%,#aa2920 50%,#442420 71%,#1a1b1c 100%);
+    background: linear-gradient(45deg, #1f2021 0%,#aa2920 50%,#442420 71%,#1a1b1c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2021', endColorstr='#1a1b1c',GradientType=1 );
+    min-height: 100vh;
 }
 
 /* Wrapping element */
@@ -12,7 +17,16 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     max-width: 1020px;
-    background-color: white;
+    background-color: #525659;
+    color: white;
+}
+
+footer {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1020px;
+    background-color: #525659;
+    color: white;
 }
 
 .navbar-brand {
@@ -22,13 +36,17 @@ body {
     margin: 0;
 }
 
+.body-content a {
+    color: #4ca6ca;
+}
+
 .navbar {
     background-color: #1b1d22;
 }
 
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #2a343d;
+    color: inherit;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -39,9 +57,9 @@ body {
     margin-bottom: 0.5em;
 }
 
-.active-accordion, .accordion:hover {
-    background-color: #ccc;
-}
+    .active-accordion, .accordion:hover {
+        background-color: #3e4953;
+    }
 
 .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -58,7 +76,7 @@ body {
 
 .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: initial;
     display: none;
     overflow: hidden;
 }
@@ -88,13 +106,13 @@ body {
 }
 
 .ot-h {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .ot-p {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .project-name{
@@ -110,6 +128,9 @@ body {
 #pdf {
     color: red;
     font-size: 2em;
+}
+
+#p-pdf {
     text-align: center;
     display: block;
     margin-left: auto;
@@ -137,6 +158,46 @@ body {
 
 .blackme{
     color: black;
+}
+
+.recherche{
+    background-color: rgba(220, 113, 113, 0.61);
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.7em;
+    width: 70%;
+    text-align: center;
+}
+
+.reac-link:hover{
+    text-decoration: none;
+}
+
+.p-accueil{
+    padding: 1rem;
+}
+
+.h-accueil{
+    padding-left: 1rem;
+}
+
+.img-reac{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tbl-striped tr:nth-child(even) {
+    background-color: #3e4449;
+}
+
+.tbl-hover tr:hover {
+    background-color: rgba(106, 111, 115, 0.80);
+}
+
+table thead {
+    background-color: #2a343d;
 }
 
 #cv-p-margin-top{
